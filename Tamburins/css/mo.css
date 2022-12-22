@@ -1,0 +1,479 @@
+@media all and (max-width:759px){
+    @import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+    .nanummyeongjo * {
+    font-family: 'Nanum Myeongjo', serif;
+    }
+
+    /* 공통 */
+    #wrap{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    header,section,footer{
+        width: 100%;
+        float: left;
+    }
+
+    /* header */
+    header{
+        height: 100px;
+        position: absolute;
+        z-index: 999;
+    }
+
+    #in_header{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #logo{
+        font: 900 30px/100px 'Nanum Myeongjo';
+        float: left;
+        margin: 0 30px 0 50px;
+    }
+
+    #logo a{
+        color: white;
+    }
+
+    #menu_wrap{
+        display: none;
+    }
+
+    #id_wrap{
+        width: auto;
+        float: right;
+        font: 15px/100px '';
+        margin-right: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #id_wrap li{
+        float: left;
+        margin: 0 15px;
+        display: none;
+    }
+
+    #id_wrap li:last-child{
+        display: block;
+    }
+
+    #id_wrap img{
+        width: 30px;
+        height: 34px;
+        margin-top: 32px;
+    }
+
+    #id_wrap a{
+        color: white;
+    }
+
+    /* left_header */
+    #left_header{
+        width: 100%;
+        float: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.3s;
+        z-index: 9999;
+    }
+
+    #label_btn{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 100px;
+        left: 50px;
+    }
+
+    #label_btn img{
+        width: 30px;
+    }
+
+    #left_wrap{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 0;
+        height: 100vh;
+        box-sizing: border-box;
+        overflow: hidden;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    #left_wrap #logo{
+        float: none;
+        width: auto;
+        margin-left: 50px;
+        opacity: 0;
+        transition: 0.5s 0.2s;
+    }
+
+    #left_wrap #logo a{
+        color: black;
+    }
+    
+    #close_btn{
+        display: none;
+    }
+
+    #clabel_btn{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+    }
+
+    #left_menu{
+        margin-left: 50px;
+        position: relative;
+        top: 20px;
+        left: 0;
+    }
+
+    #left_menu li{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        opacity: 0;
+        transition: 0.5s;
+        width: fit-content;
+    }
+
+    #pd_menu li{
+        font-size: 17px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        width: fit-content;
+        box-sizing: border-box;
+        height: 20px;
+    }
+
+    #pd_menu{
+        margin-left: 20px;
+        height: 100%;
+        display: none;
+    }
+
+    #login>a{
+        width: auto;
+        border-right: 1px solid black;
+        padding-right: 10px;
+        padding-left: 10px;
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    #login>a:first-child{
+        padding-left: 0;
+    }
+
+    /* top버튼 */
+    #top_btn{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: black;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        z-index: 9999;
+        color: white;
+        font: 20px/50px '';
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        display: none;
+    }
+
+    /* section01 */
+    #sec01{
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #sec01 video{
+        height: 100vh;
+        position: relative;
+        top: 0;
+        left: 50%;
+        margin-left: -960px;
+    }
+
+    /* section02 */
+    #sec02{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    /* left_con */
+    .left_con{
+        width: 100%;
+        height: 50vh;
+        float: left;
+        margin-bottom: 3vh;
+    }
+
+    #sec02 .left_con{
+        background: url(../img/sec02.jpg) no-repeat center/cover;
+    }
+
+    /* right_con */
+    .con_title{
+        width: auto;
+        text-align: center;
+        font-size: 4vw;
+        font-weight: 400;
+        margin: 2vw 0;
+    }
+
+    .right_con{
+        width: 100%;
+        height: 47vh;
+        float: right;
+        padding: 0 10vw;
+        box-sizing: border-box;
+        overflow: scroll;
+        padding-bottom: 4vw;
+    }
+
+    .right_con::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+
+    .con{
+        width: 35vw;
+        float: left;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .r_con{
+        float: right;
+    }
+
+    .con img{
+        width: 100%;
+    }
+    
+    .mini_txt{
+        font-size: 2vw;
+        color: rgb(87, 87, 87);
+        margin-top: 6vw;
+        margin-bottom: 1vw;
+    }
+
+    .big_txt{
+        font-size: 3vw;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .small_txt{
+        font-size: 2.5vw;
+    }
+
+    /* section03 */
+    #sec03 .left_con{
+        background: url(../img/sec03.jpg) no-repeat center/cover;
+    }
+
+    #sec03{
+        position: relative;
+        top: 0;
+    }
+
+    /* section04 */
+    #sec04{
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #sec04_wrap{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300%;
+    }
+
+    .con_left{
+        width: 100%;
+        height: 50vh;
+        float: left;
+    }
+
+    .slide_move{
+        width: 33.333%;
+        height: 100vh;
+    }
+
+    .con_right{
+        width: 100%;
+        height: 50vh;
+        float: right;
+    }
+
+    #first_con{
+        float: left;
+    }
+
+    #second_con{
+        float: left;
+    }
+
+    #third_con{
+        float: left;
+    }
+
+    #first_con .con_left{
+        background: url(../img/sec04.jpg) no-repeat center/cover;
+        float: left;
+    }
+
+    .txt_box{
+        width: auto;
+        text-align: center;
+    }
+
+    .txt_box p{
+        margin: 20px;
+    }
+
+    .top_txt{
+        font-size: 20px;
+    }
+
+    .middle_txt{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .bottom_txt{
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .btn_box{
+        width: 150px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid black;
+        box-sizing: border-box;
+        text-align: center;
+        font: 15px/50px '';
+        margin: 30px auto;
+    }
+
+    .btn_box a{
+        color: white;
+    }
+
+    .slide_btn{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        z-index: 99;
+        cursor: pointer;
+    }
+
+    #left_slide{
+        left: 30px;
+    }
+
+    #right_slide{
+        right: 30px;
+    }
+
+    .slide_btn img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #second_con .con_left{
+        background: url(../img/sec04_02.jpg) no-repeat center/cover;
+    }
+
+    #third_con .con_left{
+        background: url(../img/sec04_03.jpg) no-repeat center/cover;
+    }
+
+    #first_con .con_right{
+        margin-top: 50px;
+    }
+
+    #second_con .con_right{
+        margin-top: 30px;
+    }
+
+    #third_con .con_right{
+        margin-top: 30px;
+    }
+
+    /* section05 */
+    #sec05{
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        top: 0;
+        background: url(../img/sec05.jpg) no-repeat center/cover;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+        box-sizing: border-box;
+    }
+
+    #sec05_title{
+        font-size: 30px;
+        font-weight: 400;
+        
+    }
+
+    #sec05_text{
+        font-size: 23px;
+        margin-top: 50px;
+        font-weight: 300;
+    }
+
+    #sec05_text span{
+        display: none;
+    }
+
+    #sec05_sub{
+        margin-top: 30px;
+        font-size: 23px;
+        font-weight: 300;
+    }
+
+    /* footer */
+    footer{
+        height: 250px;
+        position: relative;
+        background-color: black;
+        color: white;
+        top: 0;
+        text-align: center;
+        font-size: 0.8vw;
+        padding-top: 80px;
+        padding: 80px 50px 0 50px;
+        box-sizing: border-box;
+    }
+
+}

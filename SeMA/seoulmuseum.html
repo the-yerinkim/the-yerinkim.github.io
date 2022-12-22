@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seoul museum</title>
+    
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/pc.css" type="text/css">
+    <link rel="stylesheet" href="css/note.css" type="text/css">
+    <link rel="stylesheet" href="css/tab.css" type="text/css">
+    <link rel="stylesheet" href="css/mo.css" type="text/css">
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+    <script src="js/seoulmuseum.js"></script>
+
+</head>
+<body>
+    
+    <div id="wrap">
+
+        <!-- top_btn -->
+        <div id="top_btn">TOP</div>
+
+        <!-- header -->
+        <header>
+
+            <div id="in_header">
+
+                <div id="top_header">
+
+                    <div id="top_menu">
+
+                        <div id="logo">
+                            <a href="#"><img src="img/logo.jpg" alt="서울시립미술관 로고"></a>
+                        </div>
+                        
+                        <ul id="id_wrap">
+                            <li>
+                                <select id="language">
+                                    <option>한국어</option>
+                                    <option>English</option>
+                                </select>
+                            </li>
+                            <li id="login"><a href="#">로그인</a></li>
+                            <li id="join_btn"><a href="#">SeMA<br>회원가입</a></li>
+                        </ul>
+
+                    </div>
+
+                    <ul id="menu_wrap">
+
+                        <li class="top_menu">
+                            <a href="#">관람</a>
+    
+                            <ul class="sub_menu">
+                                <li><a href="#">본관</a></li>
+                                <li><a href="#">북서울</a></li>
+                                <li><a href="#">남서울</a></li>
+                                <li><a href="#">미술아카이브</a></li>
+                                <li><a href="#">난지미술창작스튜디오</a></li>
+                            </ul>
+    
+                        </li>
+    
+                        <li class="top_menu">
+                            <a href="#">전시와 프로그램</a>
+    
+                            <ul class="sub_menu">
+                                <li><a href="#">전시</a></li>
+                                <li><a href="#">교육프로그램</a></li>
+                                <li><a href="#">문화행사</a></li>
+                                <li><a href="#">현재전시</a></li>
+                                <li><a href="#">예정전시</a></li>
+                                <li><a href="#">지난전시</a></li>
+                            </ul>
+    
+                        </li>
+    
+                        <li class="top_menu">
+                            <a href="#">지식과 연구</a>
+    
+                            <ul class="sub_menu">
+                                <li><a href="#">모두의 연구실 '코랄'</a></li>
+                                <li><a href="#">SeMA 도서와 자료</a></li>
+                                <li><a href="#">미술아카이브</a></li>
+                            </ul>
+    
+                        </li>
+    
+                        <li class="top_menu">
+                            <a href="#">소장품</a>
+    
+                            <ul class="sub_menu">
+                                <li><a href="#">SeMA 소장품</a></li>
+                            </ul>
+    
+                        </li>
+    
+                        <li class="top_menu">
+                            <a href="#">미술관 정보</a>
+    
+                            <ul class="sub_menu">
+                                <li><a href="#">미술관 소개</a></li>
+                                <li><a href="#">뉴스와 공지</a></li>
+                                <li><a href="#">지원과 양성</a></li>
+                                <li><a href="#">시설대관</a></li>
+                                <li><a href="#">후원회 SeMA인人[in]</a></li>
+                            </ul>
+    
+                        </li>
+    
+                        <li class="top_menu">
+                            <a href="#">SeMA</a>
+    
+                            <ul class="sub_menu">
+                                <li><a href="#">SeMA 창고</a></li>
+                                <li><a href="#">SeMA 벙커</a></li>
+                                <li><a href="#">SeMA 백남준기념관</a></li>
+                            </ul>
+    
+                        </li>
+    
+                        <li id="search">
+                            <img src="img/search.jpg" alt="검색">
+                        </li>
+    
+                    </ul>
+
+                </div>
+
+                <!-- mobile -->
+                <div id="mo_wrap">
+
+                    <div id="mo_logo">
+                        <a href="#"><img src="img/logo.jpg" alt="로고"></a>
+                    </div>
+
+                    <div id="mo_search">
+                        <img src="img/search.jpg" alt="검색">
+                    </div>
+
+                    <ul id="menu_wrap">
+
+                        <div id="mo_btn">
+                            <img src="img/menu.png" alt="메뉴">
+                        </div>
+
+                        <div id="mo_menu_wrap">
+
+                            <div id="mo_top_wrap">
+
+                                <li class="top_menu">
+                                    <div class="menu">
+                                        <p>관람</p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">본관</a></li>
+                                        <li><a href="#">북서울</a></li>
+                                        <li><a href="#">남서울</a></li>
+                                        <li><a href="#">미술아카이브</a></li>
+                                        <li><a href="#">난지미술창작스튜디오</a></li>
+                                    </ul>
+                                </li>
+        
+                                <li class="top_menu">
+                                    <div class="menu">
+                                        <p>전시와 프로그램</p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">전시</a></li>
+                                        <li><a href="#">교육프로그램</a></li>
+                                        <li><a href="#">문화행사</a></li>
+                                        <li><a href="#">현재전시</a></li>
+                                        <li><a href="#">예정전시</a></li>
+                                        <li><a href="#">지난전시</a></li>
+                                    </ul>
+                                </li>
+        
+                                <li class="top_menu">
+                                    <div class="menu">
+                                        <p>지식과 연구</p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">모두의 연구실 '코랄'</a></li>
+                                        <li><a href="#">SeMA 도서와 자료</a></li>
+                                        <li><a href="#">미술아카이브</a></li>
+                                    </ul>
+                                </li>
+        
+                                <li class="top_menu">
+                                    <div class="menu">
+                                        <p>소장품</p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">SeMA 소장품</a></li>
+                                    </ul>
+            
+                                </li>
+        
+                                <li class="top_menu">
+                                    <div class="menu">
+                                        <p>미술관 정보</p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">미술관 소개</a></li>
+                                        <li><a href="#">뉴스와 공지</a></li>
+                                        <li><a href="#">지원과 양성</a></li>
+                                        <li><a href="#">시설대관</a></li>
+                                        <li><a href="#">후원회 SeMA인人[in]</a></li>
+                                    </ul>
+            
+                                </li>    
+        
+                                <li class="top_menu">
+                                    <div class="menu">
+                                        <p>SeMA</p>
+                                        <p class="plus">+</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">SeMA 창고</a></li>
+                                        <li><a href="#">SeMA 벙커</a></li>
+                                        <li><a href="#">SeMA 백남준기념관</a></li>
+                                    </ul>
+            
+                                </li>
+
+                            </div>
+
+                            <div id="mo_join_wrap">
+
+                                <ul id="mo_join">
+                                    <li><a href="#">SeMA 회원가입</a></li>
+                                    <li><a href="#">로그인</a></li>
+                                    <li>
+                                        <select id="language">
+                                            <option>한국어</option>
+                                            <option>English</option>
+                                        </select>
+                                    </li>
+                                </ul>
+
+                                <ul id="mo_menu02">
+                                    <li><a href="#">지원과 양성</a></li>
+                                    <li><a href="#">새소식</a></li>
+                                    <li><a href="#">뉴스레터</a></li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </ul>
+
+                </div>
+
+                <div id="reservation">
+
+                    <div id="txt_box">
+                        <h1>서울시립미술관 관람 예약 바로가기</h1>
+                        <p>평일(화 - 금) 10:00-20:00, 토•일•공휴일 10:00-19:00</p>
+                    </div>
+
+                    <div id="reserve_btn"><a href="#">전시 관람 예약하기</a></div>
+
+                    <div id="close_btn">
+                        <img src="img/close.jpg" alt="닫기버튼">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- section01 -->
+        <section id="sec01">
+
+            <div id="container">
+
+                <div id="sec01_mask">
+
+                    <ul id="sec01_wrap">
+    
+                        <li class="sec01_con" id="sec01_03">
+                            <div class="sec01_con_img"></div>
+                        </li>
+                        
+                        <li class="sec01_con" id="sec01_01">
+                            <div class="sec01_con_img"></div>
+                        </li>
+    
+                        <li class="sec01_con" id="sec01_02">
+                            <div class="sec01_con_img"></div>
+                        </li>
+    
+                    </ul>
+                    
+                </div>
+
+                <div id="txt_mask">
+
+                    <div id="txt_wrap">
+
+                        <div class="txt_box01" id="txt02">
+                            <p>
+                                <span>타이틀 매치: 임흥순 vs. 오메르 파스트 &lt;컷!&gt;</span><br>
+                                2022.11.17 - 2023.04.29
+                            </p>
+                        </div>
+
+                        <div class="txt_box01" id="txt03">
+                            <p>
+                                <span>서도호와 아이들:아트랜드</span><br>
+                                2022.07.26 - 2023.03.12
+                            </p>
+                        </div> 
+                        
+                        <div class="txt_box01" id="txt01">
+                            <p>
+                                <span>유휴공간 프로젝트 &lt;오, 수줍음&gt;</span><br>
+                                2022.10.21 - 2023.01.29
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="re_btn"><a href="#">전시 관람 예약하기</a></div>
+
+                <div class="sec01_btn" id="sec01_left">&lt;</div>
+                <div class="sec01_btn" id="sec01_right">&gt;</div>
+
+            </div>
+
+        </section>
+
+        <!-- section02 -->
+        <section id="sec02">
+
+            <div id="container">
+
+                <div class="title">미술관</div>
+
+                <ul id="museum_wrap">
+
+                    <li>
+                        <div id="museum_img">
+                            <a href="#">
+                                <img src="img/sec02_01.jpg" alt="본관미술관">
+                            </a>
+                        </div>
+                        <p>
+                            <span>본관</span><br>
+                            평일(화-금) 10:00-20:00<br>
+                            토•일•공휴일 10:00-19:00
+                        </p>
+                    </li>
+
+                    <li>
+                        <div id="museum_img">
+                            <a href="#">
+                                <img src="img/sec02_02.jpg" alt="북서울미술관">
+                            </a>
+                        </div>
+                        <p>
+                            <span>북서울</span><br>
+                            평일(화-금) 10:00-20:00<br>
+                            토•일•공휴일 10:00-19:00
+                        </p>
+                    </li>
+
+                    <li>
+                        <div id="museum_img">
+                            <a href="#">
+                                <img src="img/sec02_03.jpg" alt="남서울미술관">
+                            </a>
+                        </div>
+                        <p>
+                            <span>남서울</span><br>
+                            평일(화-금) 10:00-20:00<br>
+                            토•일•공휴일 10:00-19:00
+                        </p>
+                    </li>
+
+                    <li>
+                        <div id="museum_img">
+                            <a href="#">
+                                <img src="img/sec02_04.jpg" alt="미술아카이브">
+                            </a>
+                        </div>
+                        <p><span>미술 아카이브</span></p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- section03 -->
+        <section id="sec03">
+
+            <div id="container">
+
+                <div class="title">전시</div>
+
+                <div id="sec03_mask">
+
+                    <ul id="sec03_wrap">
+
+                        <li class="exhibit">
+                            <a href="#">
+                                <img src="img/sec03_01.jpg" alt="오늘본것">
+                                <p class="place">본관</p>
+                                <p class="ex_title">
+                                    정서영 개인전 &lt;오늘 본 것&gt; <br>
+                                    <span>
+                                        2022.09.01 - 2022.11.13
+                                    </span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="exhibit">
+                            <a href="#">
+                                <img src="img/sec03_02.jpg" alt="이례적인 시간, 불확실한 움직임">
+                                <p class="place">본관</p>
+                                <p class="ex_title">
+                                    이례적인 시간, 불확실한 움직임 <br>
+                                    <span>
+                                        2022.10.25 - 2022.11.27
+                                    </span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="exhibit">
+                            <a href="#">
+                                <img src="img/sec03_03.jpg" alt="귀불">
+                                <p class="place">아트스페이스 보안1</p>
+                                <p class="ex_title">
+                                    박웅규 개인전 &lt;귀불&gt; <br>
+                                    <span>
+                                        2022.10.30 - 2022.11.20
+                                    </span>
+                                </p>
+                            </a>
+                            
+                        </li>
+
+                        <li class="exhibit">
+                            <a href="#">
+                                <img src="img/sec03_04.jpg" alt="춤추는 낱말">
+                                <p class="place">본관</p>
+                                <p class="ex_title">
+                                    춤추는 낱말 <br>
+                                    <span>
+                                        2022.09.01 - 2022.11.20
+                                    </span>
+                                </p>
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- section04 -->
+        <section id="sec04">
+
+            <div id="container">
+
+                <div class="title">소장품</div>
+
+                <div id="sec04_mask">
+
+                    <ul id="sec04_wrap">
+                        
+                        <li class="sec04_con">
+                            <a href="#">
+                                <img src="img/sec04_12.jpg" alt="GAME II">
+                                <p>
+                                    <span>GAME II: 사역마. Freeze!</span><br>
+                                    강정석, 2017-2018
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="sec04_con">
+                            <a href="#">
+                                <img src="img/sec04_01.jpg" alt="colporteur">
+                                <p>
+                                    <span>colporteur "0-TIME, 1993"</span><br>
+                                    김순기, 1993
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="sec04_con">
+                            <a href="#">
+                                <img src="img/sec04_02.jpg" alt="하나코와 김치오빠">
+                                <p>
+                                    <span>하나코와 김치오빠 외 연속재생</span><br>
+                                    최윤, 2017
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="sec04_con">
+                            <a href="#">
+                                <img src="img/sec04_03.jpg" alt="존재의 계절">
+                                <p>
+                                    <span>존재의 계절 I, II, III, IV</span><br>
+                                    Debbie Han, 2013-2016
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="sec04_con">
+                            <a href="#">
+                                <img src="img/sec04_04.jpg" alt="그림의 시작">
+                                <p>
+                                    <span>그림의 시작</span><br>
+                                    최진욱, 1991
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="sec04_con">
+                            <a href="#">
+                                <img src="img/sec04_06.jpg" alt="장벽">
+                                <p>
+                                    <span>장벽</span><br>
+                                    정덕현, 2015
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="sec04_con">
+                            <a href="#">
+                                <img src="img/sec04_08.jpg" alt="신의 자리">
+                                <p>
+                                    <span>신의 자리_선명한 찰나 2</span><br>
+                                    김은진, 2020-2021
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="sec04_con">
+                            <a href="#">
+                                <img src="img/sec04_09.jpg" alt="황금 모듈">
+                                <p>
+                                    <span>황금 모듈</span><br>
+                                    박은태, 2021
+                                </p>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="sec04_btn" id="sec04_left">&lt;</div>
+                <div class="sec04_btn" id="sec04_right">&gt;</div>
+
+            </div>
+
+        </section>
+
+        <!-- section05 -->
+        <section id="sec05">
+
+            <div id="container">
+
+                <div class="title">뉴스레터</div>
+
+                <ul id="news_letter">
+
+                    <li>
+                        <a href="#">
+                            <img src="img/sec05_01.jpeg" alt="정착세계">
+                            <p>
+                                <span>전시프로그램</span><br>
+                                사진미술관 사전프로그램<br>
+                                &lt;정착세계&gt;
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/sec05_02.jpeg" alt="오늘 본 것">
+                            <p>
+                                <span>전시</span><br>
+                                정서영 개인전<br>
+                                &lt;오늘 본 것&gt;
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/sec05_03.jpeg" alt="레이첼 레치크스">
+                            <p>
+                                <span>뉴스</span><br>
+                                제 12회 서울미디어시티비엔날레
+                                예술감독에 레이첼 레치크스 선임
+                            </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/sec05_04.jpeg" alt="아트랜드">
+                            <p>
+                                <span>전시 프로그램</span><br>
+                                &lt;서도호와 아이들: 아트랜드&gt;
+                            </p>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- section06 -->
+        <section id="sec06">
+
+            <div id="container">
+
+                <div class="title">새소식</div>
+
+                <ul id="news">
+                    <li><a href="#">2023 난지미술창작스튜디오 입주자 모집 1차 서류심사 결과공지</a></li>
+                    <li><a href="#">서울의 가치 찾기 시민 공모전</a></li>
+                    <li><a href="#">2022 시민큐레이터 전시지원 공모사업 최종합격자 공고</a></li>
+                </ul>
+
+                <div id="more_btn">
+                    <a href="#">모두 보기 &gt;</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div id="in_footer">
+
+                <div id="top_footer">
+
+                    <ul class="title">
+
+                        <li>
+                            <a href="#">SeMA 가입신청</a>
+                        </li>
+
+                        <li id="join_07">
+                            <a href="#">가입하기</a>
+                        </li>
+
+                        <li>
+                            <a href="#">SeMA 뉴스레터</a>
+                        </li>
+
+                        <li>
+                            <a href="#">소식지</a>
+                        </li>
+
+                    </ul>
+
+                    <div id="f_menu">
+                        <ul class="f_menu_wrap">
+
+                            <li><a href="#">인스타그램</a></li>
+                            <li><a href="#">유튜브</a></li>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">트위터</a></li>
+                            <li><a href="#">네이버</a></li>
+    
+                        </ul>
+    
+                        <ul class="f_menu_wrap">
+    
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">접근성안내</a></li>
+                            <li><a href="#">이메일무단수집거부</a></li>
+                            <li><a href="#">함께한사람들</a></li>
+    
+                        </ul>
+    
+                        <ul class="f_menu_wrap">
+    
+                            <li><a href="#">미술관소개</a></li>
+                            <li><a href="#">뉴스와 공지</a></li>
+                            <li><a href="#">지원과 양성</a></li>
+                            <li><a href="#">시설대관</a></li>
+                            <li><a href="#">후원회</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                            <li><a href="#">FAQ</a></li>
+    
+                        </ul>
+                    </div>
+
+                    
+
+                </div>
+
+                <div id="bottom_footer">
+
+                    <div id="address">
+                        서울 중구 덕수궁길 61 <br>
+                        02-2124-8800 <br>
+                        sema@seoul.go.kr <br>
+                        소유: 서울특별시청
+                    </div>
+
+                    <div id="f_logo">
+                        <img src="img/logo.jpg" alt="로고">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+        
+</body>
+</html>
